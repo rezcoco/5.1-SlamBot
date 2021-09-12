@@ -177,7 +177,7 @@ class GoogleDriveHelper:
             permissions = {
                 'role': 'reader',
                 'type': 'domain',
-                'domain': 'jgstorage.xyz'
+                'domain': 'jgstorage.xyz',
                 'value': None,
                 'withLink': False
             }
