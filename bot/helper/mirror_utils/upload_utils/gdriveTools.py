@@ -176,7 +176,7 @@ class GoogleDriveHelper:
         permissions = {
             'role': 'reader',
             'type': 'user',
-            'emailAddress': 'reanza@jgstorage.xyz'
+            'emailAddress': 'reanza@jgstorage.xyz',
             'value': None,
             'withLink': False
         }
