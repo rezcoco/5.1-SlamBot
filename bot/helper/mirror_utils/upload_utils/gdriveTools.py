@@ -174,8 +174,8 @@ class GoogleDriveHelper:
            retry=retry_if_exception_type(HttpError), before=before_log(LOGGER, logging.DEBUG))
     def __set_permission(self, drive_id):
         permissions = {
-            'role': '',
-            'type': '',
+            'role': 'reader',
+            'type': 'anyone',
             'value': None,
             'withLink': False
         }
