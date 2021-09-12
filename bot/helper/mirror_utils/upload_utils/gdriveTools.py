@@ -175,7 +175,8 @@ class GoogleDriveHelper:
     def __set_permission(self, drive_id):
         permissions = {
             'role': 'reader',
-            'type': 'anyone',
+            'type': 'user',
+            'emailAddress': 'reanza@jgstorage.xyz'
             'value': None,
             'withLink': False
         }
