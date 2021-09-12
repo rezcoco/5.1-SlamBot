@@ -176,10 +176,8 @@ class GoogleDriveHelper:
         permissions = {
             'role': 'reader',
             'type': 'user',
-            'emailAddress': 'reanza@jgstorage.xyz',
             'value': None,
-            'withLink': False
-        }
+            'withLink': False, 'emailAddress': 'reanza@jgstorage.xyz'}
         return self.__service.permissions().create(supportsTeamDrives=True, fileId=drive_id,
                                                    body=permissions).execute()
 
