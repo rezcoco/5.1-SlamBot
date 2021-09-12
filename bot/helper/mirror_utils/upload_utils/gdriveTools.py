@@ -174,10 +174,10 @@ class GoogleDriveHelper:
            retry=retry_if_exception_type(HttpError), before=before_log(LOGGER, logging.DEBUG))
     def __set_permission(self, drive_id):
         permissions = {
-            'role': 'reader',
-            'type': 'anyone',
+            'role': '',
+            'type': '',
             'value': None,
-            'withLink': True
+            'withLink': False
         }
         return self.__service.permissions().create(supportsTeamDrives=True, fileId=drive_id,
                                                    body=permissions).execute()
