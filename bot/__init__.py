@@ -140,6 +140,7 @@ except:
 try:
     BOT_TOKEN = getConfig('BOT_TOKEN')
     parent_id = getConfig('GDRIVE_FOLDER_ID')
+    TYPE_ACCOUNT = getConfig('TYPE_ACCOUNT')
     DOWNLOAD_DIR = getConfig('DOWNLOAD_DIR')
     if not DOWNLOAD_DIR.endswith("/"):
         DOWNLOAD_DIR = DOWNLOAD_DIR + '/'
