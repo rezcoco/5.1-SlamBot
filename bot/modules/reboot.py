@@ -15,4 +15,4 @@ async def gib_restart(client, message, hap):
 @check_heroku
 async def shutdown(client, message, app_):
     msg_ = await message.reply_text("**[HEROKU] - Shutdown**\n\n**NOTE: You need to turn on manual from Heroku to use this bot again.**")
-    app_.process_formation()["worker"].scale(0)
+    app_.process_formation()["web"].scale(0)
