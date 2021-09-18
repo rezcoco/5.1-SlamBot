@@ -13,7 +13,7 @@ google-auth-oauthlib
 gunicorn
 heroku3
 js2py
-lk21==1.6.2
+lk21==1.6.0
 lxml
 psutil
 psycopg2-binary
